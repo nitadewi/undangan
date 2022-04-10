@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 768px;
+    height: 896px;
   }
 }
 .fh5co-cover .display-t,
@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
+    height: 896px;
   }
 }
 .fh5co-cover.fh5co-cover-sm {
@@ -1181,7 +1181,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #0a0809;
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1304,6 +1304,8 @@ form label {
     width: 100%;
   }
 }
+
+
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
   color: #8f989f;
