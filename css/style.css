@@ -28,6 +28,11 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+#fh5co-header{
+  background-image:url(/images/img_bg_2.jpeg);
+  background-position: center;
+  object-fit: cover;
+}
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -296,11 +301,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  width: 100%;
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -317,7 +321,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 896px;
+    height: 100%;
   }
 }
 .fh5co-cover .display-t,
@@ -362,7 +366,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .display-tc,
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
   display: table;
   width: 100%;
 }
@@ -471,6 +474,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 0px;
 }
 @media screen and (max-width: 480px) {
+  #fh5co-header {
+    background-image: url(/images/img_bg_small.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
   .timeline:before {
     margin-left: -64px;
   }
@@ -906,7 +914,7 @@ form label {
 #fh5co-counter .counter-label {
   margin-bottom: 0;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   letter-spacing: .1em;
 }
 @media screen and (max-width: 768px) {
@@ -1239,7 +1247,7 @@ form label {
 }
 
   .fh5co-heading h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .fh5co-heading p {
