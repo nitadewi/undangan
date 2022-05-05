@@ -29,7 +29,7 @@ body {
   transition: 0.5s;
 }
 #fh5co-header{
-  background-image:url(/images/img_bg_2.jpeg);
+  background-image:url(/febry/images/img_bg_2.jpeg);
   background-position: center;
   object-fit: cover;
 }
@@ -475,7 +475,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 480px) {
   #fh5co-header {
-    background-image: url(/images/img_bg_small.jpeg);
+    background-image: url(/febry/images/img_bg_small.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -1479,10 +1479,7 @@ form label {
 .owl-carousel .owl-controls .owl-dot:hover span, .owl-carousel .owl-controls .owl-dot:focus span {
   background: #cccccc;
 }
-.owl-carousel .owl-controls .owl-dot.active span {
-  background: transparent;
-  border: 2px solid #F14E95;
-}
+
 
 #fh5co-offcanvas {
   position: absolute;
@@ -1878,7 +1875,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #000;
 }
 
 .row-pb-md {
@@ -1901,6 +1898,41 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.comments{
+    margin-top: 5%;
+    margin-left: 20px;
+}
+
+.darker{
+    border: 1px solid #ecb21f;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.comment{
+   border: 1px solid rgb(12, 23, 23);
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+}
+
+.comment p,.comment span,.darker p,.darker span{
+    color: rgb(184, 183, 183);
+}
+
+.comment-box {
+  max-height: 400px ;
+  overflow-y: scroll;
 }
 
 /*# sourceMappingURL=style.css.map */
