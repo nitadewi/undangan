@@ -1731,9 +1731,9 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: #0c0c0c;
   color: #fff;
-  border: 2px solid #F14E95;
+  border: 2px solid #fffcfd;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f366a3 !important;
@@ -1908,7 +1908,7 @@ form label {
 .darker{
     border: 1px solid #ecb21f;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 20px;
     padding-left: 40px;
     padding-right: 30px;
     padding-top: 10px;
@@ -1918,21 +1918,21 @@ form label {
 .comment{
    border: 1px solid rgb(12, 23, 23);
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 5px;
+    border-radius: 20px;
     padding-left: 40px;
     padding-right: 30px;
     padding-top: 10px;
     margin-top: 10px;
-    
 }
 
-.comment p,.comment span,.darker p,.darker span{
-    color: rgb(184, 183, 183);
+.darker p,.darker span{
+    color: rgb(251, 248, 248);
 }
 
 .comment-box {
-  max-height: 400px ;
+  max-height: 600px ;
   overflow-y: scroll;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

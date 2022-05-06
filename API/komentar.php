@@ -17,6 +17,7 @@ require_once "koneksi.php";
                      'data' => $data
                   );
       header('Content-Type: application/json');
+     
       echo json_encode($response);
    }   
    

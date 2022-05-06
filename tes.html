@@ -54,7 +54,7 @@
 								<h1>Febry &amp; Diana</h1>
 								
 								<div class="simply-countdown simply-countdown-one"></div>
-								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+								<p><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MXU5aDJudXBjZ3M4cDZ1OTBmb200bnZhdWwgbml0YWRld2lzQG0&amp;tmsrc=nitadewis%40gmail.com" class="btn btn-default btn-sm">Save the date</a></p>
 								
 							</div>
 						</div>
@@ -113,14 +113,20 @@
 								<div class="col-md-8 col-sm-12 text-center">
 									<div class="event-wrap animate-box">
 										<h3>Kediaman Bapak Makmur</h3>
+										
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<span>7:00 - 12:00 WIT</span>
+											<span>11:00 - 12:00 WIT</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
-											<span>Sabtu 28 Mei 2022</span>
+											<span>Sabtu 14 Mei 2022</span>
 										</div>
+										<div style="text-align: center;">
+										<i class="icon-map"></i>
+										<span>JL. Palu, Kali Susu, Nabire</span>
+										</div>
+										
 										<i><p>Kehadiran Anda adalah silaturahmi, do'a restu Anda adalah kado terindah bagi kami, kehadiran Anda adalah doa' restu yang tak ternilai harganya</p>
 											<p>Jazakumullahu Khairan Katsiran, hanya kepada Illahi Robbi tercurah do'a sebagai ungkapan terima kasih kami</p></i>
 									</div>
@@ -222,7 +228,7 @@
 						<h2>Wedding Gift</h2>
 					</div>
 					<div class="event-wrap animate-box">
-					<i><p>mungkin karena jarak, waktu ataupun keadaan yang menghalangi untuk ikut hadir dalam moment bahagia kami, dapat mengirimkan kado ke sini </p></i>
+					<i><p>mungkin karena jarak, waktu ataupun keadaan yang menghalangi untuk ikut hadir dalam moment bahagia kami, dapat mengirimkan kado ke alamat dibawah ini </p></i>
 					<div class="row">
 						<div class="col-lg-12">
 							<img src="images/logo-mandiri.png" width="150px">
@@ -265,7 +271,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<button type="submit" value="Kirim Doa" class="btn"> Kirim Doa </button>
+											<button type="submit" value="Kirim Doa" class="btn btn-primary"> Kirim Doa </button>
 										</div>
 									</form>		
 							</div>
@@ -293,7 +299,7 @@
 								<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 									<h2>Kami yang Berbahagia</h2>
 									<h1>Febry & Diana</h1>
-									<iframe src="music/bg-music.mp3" allow="autoplay" id="audio" style="display: none" loop="tru">
+									<iframe src="music/bg-music.mp3" allow="autoplay" id="audio" style="display: none" loop="true">
 										<audio id="player" autoplay loop>
 										<source src="music/bg-music2.mp3" type="audio/mp3">
 									</audio>
@@ -379,7 +385,7 @@
     });
 
 	 function getData (){ 
-				 $.get( "http://127.0.0.1/febry/api/komentar.php?function=getData", function( data ) {
+				 $.get( "https://komentar-undangan.000webhostapp.com/komentar.php?function=getData", function( data ) {
 				console.log(data.data)
 				var html =''
 					for(i = data.data.length-1; i >=  0; i--) {
@@ -391,12 +397,11 @@
 							c = "color: white"
 						}
 						html += '<h4 style="'+ c+ '">' + data.data[i].nama + ' ' + '<span style = "font-size: 0.5em;">' + moment(data.data[i].date).format("MMM Do YY"); + '</span></h4>'
-						html += '<p style="font-size: 12px;">' + data.data[i].komentar + '</p>'
+						html += '<p style="font-size: 12px; margin-top: 5px">' + data.data[i].komentar + '</p>'
 						html += '</div>'
 					}
 
 					$('#doa').html(html);
-					data.__setitem__("Content-type", "application/json")
 			
 				});  
 
@@ -416,7 +421,7 @@
 				thisForm.addEventListener('submit', async function (e) {
 					e.preventDefault();
 					const formData = new FormData(thisForm)
-					const response = await fetch('http://127.0.0.1/febry/api/komentar.php?function=insert', {
+					const response = await fetch('https://komentar-undangan.000webhostapp.com/komentar.php?function=insert', {
 						method: 'POST',
 						body: formData
 					});
