@@ -113,20 +113,28 @@
 								<div class="col-md-8 col-sm-12 text-center">
 									<div class="event-wrap animate-box">
 										<h3>Kediaman Bapak Makmur</h3>
-										
+										<div style="text-align: center;">
+										<i class="icon-calendar"></i>
+										<span>14 Mei 2022</span>
+										</div>
+										<br>
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<span>11:00 - 12:00 WIT</span>
+											<span>Akad Nikah</span>
+											<span>11:00 WIT</span>
 										</div>
 										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Sabtu 14 Mei 2022</span>
+											
+											<i class="icon-clock"></i>
+											<span>Syukuran</span>
+											<span>12:00 WIT</span>
 										</div>
+										
 										<div style="text-align: center;">
 										<i class="icon-map"></i>
 										<span>JL. Palu, Kali Susu, Nabire</span>
 										</div>
-										
+										<br>
 										<i><p>Kehadiran Anda adalah silaturahmi, do'a restu Anda adalah kado terindah bagi kami, kehadiran Anda adalah doa' restu yang tak ternilai harganya</p>
 											<p>Jazakumullahu Khairan Katsiran, hanya kepada Illahi Robbi tercurah do'a sebagai ungkapan terima kasih kami</p></i>
 									</div>
@@ -373,7 +381,12 @@
 
 	<script>
 		var getData
-		$(document).ready(function(){
+		  $(document).load(function () {
+				$('.fh5co-loader').show();
+			});
+		
+		
+			$(document).ready(function(){
 			$.ajaxSetup({
 					cache: false
 			});
@@ -428,7 +441,7 @@
         enableUtc: false
     });
 
-	const thisForm = document.getElementById('form-kirim-doa');
+				const thisForm = document.getElementById('form-kirim-doa');
 				thisForm.addEventListener('submit', async function (e) {
 					e.preventDefault();
 					const formData = new FormData(thisForm)
