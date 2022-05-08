@@ -68,6 +68,7 @@
 			position:absolute;
 			bottom:0;
 			transform: translate(-50%, -50%);
+			background-color:silver;
 			
 		}
 
@@ -126,7 +127,8 @@
 	</head>
 	<body>
 		
-	
+	<div class="fh5co-loader"></div>
+
 	<div id="page">
 		<div class="awal" style="text-align: center;">
 			<h3>The Wedding Of</h3>
@@ -139,7 +141,7 @@
 			<p>di tempat</p>
 			<br>
 			<br>
-			<button value="Buka Undangan" class="btn tombol" onclick="buka()"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Buka Undangan</button>
+			<button value="Buka Undangan" class="btn tombol"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Buka Undangan</button>
 
 
 		</div>
@@ -152,15 +154,17 @@
 	<script src="js/jquery.min.js"></script>
 	<script>
 	$( document ).ready(function() {
-    	$('#lds-hourglass')
-			.hide()  // Hide it initially
-			.ajaxStart(function() {
-				$(this).show();
-			})
-			.ajaxStop(function() {
-				$(this).hide();
+		$('.fh5co-loader').hide();
+
+		 $(".tombol").click(function(){
+			$('.fh5co-loader').show();
+				var new_url = "./tes.html";
+				$("#page").load(new_url, function() {
+					// Callback executed once the load has been performed
+					$('.fh5co-loader').hide();
+				});        
 			});
-		
+    
 		
 		var url = new URL(window.location.href);
 		var to = url.searchParams.get("to");
@@ -169,11 +173,13 @@
 	});
 
 		
-		function buka() {
-			
-			$('#page').load('./tes.html');
+		// function buka() {
+
+		// 	$('#page').load('./tes.html', function() {
+				
+		// });
 		
-		}
+		// }
 		
 		
 	
