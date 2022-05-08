@@ -17,7 +17,6 @@ require_once "koneksi.php";
                      'data' => $data
                   );
       header('Content-Type: application/json');
-     
       echo json_encode($response);
    }   
    
@@ -28,7 +27,6 @@ require_once "koneksi.php";
          $check = array('nama' => '', 'komentar' => '');
          $check_match = count(array_intersect_key($_POST, $check));
          if($check_match == count($check)){
-         
                $result = mysqli_query($connect, "INSERT INTO komentar SET
                nama = '$_POST[nama]',
                komentar = '$_POST[komentar]'");
@@ -37,7 +35,7 @@ require_once "koneksi.php";
                {
                   $response=array(
                      'status' => 1,
-                     'message' =>'Insert Success'
+                     'message' => $check
                   );
                }
                else

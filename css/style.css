@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #F14E95;
+  color: #080808;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
@@ -1736,17 +1736,17 @@ form label {
   border: 2px solid #fffcfd;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #0b0b0b !important;
+  border-color: #151515 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: #060606;
+  border: 2px solid #0e0e0e;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
-  color: #fff;
+  background: #353535;
+  color: rgb(8, 8, 8);
 }
 
 .btn-success {
@@ -1903,6 +1903,9 @@ form label {
 .comments{
     margin-top: 5%;
     margin-left: 20px;
+     border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 }
 
 .darker{
@@ -1930,7 +1933,7 @@ form label {
 }
 
 .comment-box {
-  max-height: 600px ;
+  max-height: 400px ;
   overflow-y: scroll;
   margin-bottom: 10px;
 }
